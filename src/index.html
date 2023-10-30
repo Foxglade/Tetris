@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Tetris Game</title>
+  <link rel="stylesheet" type="text/css" href="style.css">
+  <style>
+    body {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      margin: 0;
+      background-image: url('tetris.jpg');
+      background-size: cover;
+      background-position: center;
+    }
+
+    #tetris-container {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      border: 2px solid #333;
+      background-color: rgba(255, 255, 255, 0.5);
+      margin-bottom: 20px;
+      padding: 20px;
+    }
+
+    #tetris {
+      border: 2px solid #333;
+      background-color: rgba(255, 255, 255, 0.5);
+    }
+
+    #score {
+      font-family: Arial, sans-serif;
+      font-size: 24px;
+      text-align: center;
+      margin-top: 20px;
+      color: rgb(0, 255, 21);
+    }
+  </style>
+</head>
+<body>
+  <div id="tetris-container">
+    <canvas id="tetris" width="300" height="600"></canvas>
+    <button id="startButton" class="button-3 custom-button">Start Game</button>
+    <button id="quitButton" class="button-3" role="button">Quit Game</button>
+    <div id="score">Score: 0</div>
+  </div>
+  
+  <script src="main.js"></script>
+</body>
+</html>
